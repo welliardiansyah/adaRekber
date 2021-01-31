@@ -8,7 +8,7 @@ import {
   Dimensions,
 } from 'react-native';
 import {headerProfiles, Logo} from '../../assets';
-import {Profiles, PesananAktif} from '../../components/';
+import {Profiles, BottomSetting, BottomAddress, BottomLogout} from '../../components/';
 import {ScrollView} from 'react-native-gesture-handler';
 
 const Accounts = () => {
@@ -18,17 +18,15 @@ const Accounts = () => {
         <ImageBackground source={headerProfiles} style={styles.header}>
           <Image source={Logo} style={styles.logo} />
           <View style={styles.hello}>
-            <Text style={styles.selamat}>Profile, </Text>
-            <Text style={styles.selamat}>Ardiansyah Welly, </Text>
           </View>
         </ImageBackground>
         <Profiles />
         <View style={styles.pesananAktif}>
-          <Text style={styles.label}>History Parking</Text>
-          <PesananAktif title="Pesanan No. 0002142" status="Finished"/>
-          <PesananAktif title="Pesanan No. 0002142" status="On Process"/>
-          <PesananAktif title="Pesanan No. 0002142" status="Finished"/>
-          <PesananAktif title="Pesanan No. 0002142" status="Finished"/>
+          <Text style={styles.name}>Welly Ardiansyah</Text>
+          <Text style={styles.accountid}>Account ID :{}</Text>
+          <BottomSetting title="Setting Profiles" />
+          <BottomAddress title="Setting Address & Location" />
+          <BottomLogout title="Log Out" />
         </View>
       </ScrollView>
     </View>
@@ -47,7 +45,7 @@ const styles = StyleSheet.create({
   },
   header: {
     width: windowWidth,
-    height: windowHeight * 0.3,
+    height: windowHeight * 0.2,
     paddingHorizontal: 30,
     paddingTop: 10,
   },
@@ -58,22 +56,25 @@ const styles = StyleSheet.create({
   hello: {
     marginTop: windowHeight * 0.03,
   },
-  selamat: {
-    fontSize: 24,
-    fontFamily: 'TitilliumWeb-Regular',
-  },
-  username: {
-    fontSize: 22,
-    fontFamily: 'TitilliumWeb-Bold',
-  },
   layanan: {
     paddingLeft: 30,
     paddingTop: 15,
   },
-  label: {
+  name: {
+    alignSelf: 'center',
     fontSize: 18,
     fontFamily: 'TitilliumWeb-Bold',
   },
+  accountid: {
+    alignSelf: 'center',
+    fontSize: 14,
+    fontFamily: 'TitilliumWeb',
+    marginBottom: 20,
+  },
+  label: {
+    fontSize: 18,
+    fontFamily: 'TitilliumWeb-Bold',
+  }, 
   iconLayanan: {
     flexDirection: 'row',
     justifyContent: 'space-between',

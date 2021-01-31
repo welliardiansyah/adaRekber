@@ -10,6 +10,9 @@ import IconChat from './chat.svg';
 import IconHelp from './help.svg';
 import IconShop from './shop.svg';
 import IconPesananAktif from './pesananAktif.svg'
+import IconSetting from './settings.svg'
+import IconAddress from './address.svg'
+import IconLogout from './keluar.svg'
 
 export {
   IconAkun,
@@ -23,5 +26,8 @@ export {
   IconChat,
   IconHelp,
   IconShop,
-  IconPesananAktif
+  IconPesananAktif,
+  IconSetting,
+  IconAddress,
+  IconLogout
 };

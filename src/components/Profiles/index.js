@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Dimensions} from 'react-native';
+import {ImageHeader, Logo} from '../../assets';
 import {WARNA_UTAMA} from '../../utils/constant';
 import ButtonIcon from '../ButtonIcon';
 import Gap from '../Gap';

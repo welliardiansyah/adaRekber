@@ -35,10 +35,10 @@ const Home = () => {
         </View>
         <View style={styles.pesananAktif}>
           <Text style={styles.label}>History Your Transcation</Text>
-          <PesananAktif title="Pesanan No. 0002142" status="Finished"/>
-          <PesananAktif title="Pesanan No. 0002142" status="On Process"/>
-          <PesananAktif title="Pesanan No. 0002142" status="Finished"/>
-          <PesananAktif title="Pesanan No. 0002142" status="Finished"/>
+          <PesananAktif title="Transaction No. 0002142" status="On Process"/>
+          <PesananAktif title="Transaction No. 0002142" status="Finished"/>
+          <PesananAktif title="Transaction No. 0002142" status="Finished"/>
+          <PesananAktif title="Transaction No. 0002142" status="Finished"/>
         </View>
       </ScrollView>
     </View>

@@ -13,7 +13,7 @@ const Saldo = () => {
           <Text style={styles.valueSaldo}>Rp. 100.000</Text>
         </View>
         <View style={styles.text}>
-          <Text style={styles.labelPoint}>Parking Points :</Text>
+          <Text style={styles.labelPoint}>Rekber Points :</Text>
           <Text style={styles.valuePoint}>100 points</Text>
         </View>
       </View>
