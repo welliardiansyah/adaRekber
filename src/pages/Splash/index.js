@@ -6,7 +6,11 @@ const Splash = ({ navigation }) => {
     
     useEffect(() => {
         setTimeout( () => {
-            navigation.replace('MainApp');
+            /*
+             * If you go to hone
+             * navigation.replace('MainApp');
+             */
+             navigation.replace('Login');
         }, 3000)
     }, [navigation]);
 

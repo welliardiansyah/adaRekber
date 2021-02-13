@@ -7,7 +7,7 @@ import {
   ImageBackground,
   Dimensions,
 } from 'react-native';
-import {headerProfiles, Logo} from '../../assets';
+import {ImageHeader, Logo} from '../../assets';
 import {Profiles, BottomSetting, BottomAddress, BottomLogout} from '../../components/';
 import {ScrollView} from 'react-native-gesture-handler';
 
@@ -15,7 +15,7 @@ const Accounts = () => {
   return (
     <View style={styles.page}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <ImageBackground source={headerProfiles} style={styles.header}>
+        <ImageBackground source={ImageHeader} style={styles.header}>
           <Image source={Logo} style={styles.logo} />
           <View style={styles.hello}>
           </View>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   header: {
     width: windowWidth,
-    height: windowHeight * 0.2,
+    height: windowHeight * 0.3,
     paddingHorizontal: 30,
     paddingTop: 10,
   },

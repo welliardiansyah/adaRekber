@@ -9,8 +9,6 @@ import {
 } from 'react-native';
 import {ImageHeader, Logo} from '../../assets';
 import {Saldo, PesananAktif} from '../../components/';
-import ButtonIcon from '../../components/ButtonIcon';
-import {WARNA_ABU_ABU} from '../../utils/constant';
 import {ScrollView} from 'react-native-gesture-handler';
 
 const Home = () => {
